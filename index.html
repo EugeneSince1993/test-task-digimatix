@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png">
   <link 
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:regular,black|Montserrat:regular,bold"
@@ -10,253 +11,610 @@
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://kit.fontawesome.com/420c68ffc0.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
   <div class="landing-page">
-    <div class="section-1">
-      <div class="container container-s-1">
-        <div class="header">
-          <div class="logo">
-            <img src="./assets/img/s-1-logo.png" alt="">
-          </div>
-          <div class="order-ticket">
-            <button class="btn btn-1">Закажите ваш билет</button>
-          </div>
-        </div>
-        <div class="showcase">
-          <div class="info">
-            <h2>До луны и обратно!</h2>
-            <p>
-              Задача организации, в особенности же курс на социально-ориентированный национальный проект позволяет оценить значение модели развития. 
-            </p>
-            <div class="actions">
-              <button class="btn btn-1">
-                Подробнее о нас
-              </button>
-              <div class="play">
-                <img src="./assets/img/s-1-btn.png" alt="">
-              </div>
+    <header class="header">
+      <div class="header-desktop">
+        <div class="container container-h">
+          <div class="label">
+            <div class="label__logo">
+              <img src="./assets/img/logo.svg" alt="label-logo">
+            </div>
+            <div class="label__text">
+              ФИНСГРАМ
             </div>
           </div>
-          <div class="moon">
-            <img class="moon-img" src="./assets/img/s-1-moon.png" alt="">
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">о чемпионате</a>
+                </li>
+                <li>
+                  <a href="#">новости</a>
+                </li>
+                <li>
+                  <a href="#">контакты</a>
+                </li>
+                <li>
+                  <a class="btn btn-1 solid yellow" href="#">Регистрация</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <div class="animated-elements">
-          <div class="arrow-1-s-1">
-            <img src="./assets/img/section-1/arrow-1-s-1.png">
+      </div>
+      <div class="header-mobile">
+        <div class="container container-h">
+          <div class="label">
+            <div class="label__logo">
+              <img src="./assets/img/logo.svg" alt="label-logo">
+            </div>
+            <div class="label__text">
+              ФИНСГРАМ
+            </div>
           </div>
-          <div class="arrow-2-s-1">
-            <img src="./assets/img/section-1/arrow-2-s-1.png">
+          <div class="foldable-menu">
+            <div class="bars-icon" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu" id="mobile-nav">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">о чемпионате</a>
+                  </li>
+                  <li>
+                    <a href="#">новости</a>
+                  </li>
+                  <li>
+                    <a href="#">контакты</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-1 solid yellow" href="#">Регистрация</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="arrow-3-s-1">
-            <img src="./assets/img/section-1/arrow-3-s-1.png">
+        </div>
+      </div>
+    </header>
+    <div class="section-1">
+      <div class="container container-s-1">
+        <div class="info">
+          <div class="info__1">
+            <h4>
+              Летний чемпионат<br> по финансовым играм
+            </h4>
+            <div class="ruble-sign">
+              <img src="./assets/img/ruble-sign.png" alt="ruble-sign">
+            </div>
           </div>
-          <div class="circle-1-s-1"></div>
-          <div class="circle-2-s-1"></div>
-          <div class="circle-3-s-1"></div>
-          <div class="circle-4-s-1"></div>
+          <div class="info__2">
+            <div class="short-data-container">
+              <div class="short-data">
+                <div class="highlighted solid">май-август 2023 г.</div>
+                <div class="highlighted solid">г. Хабаровск</div>
+              </div>
+              <div class="short-data">
+                <div class="highlighted solid">для школьников 8-18 лет</div>
+              </div>
+            </div>
+            <div class="text">
+              <h4>Прокачай свои знания по финансовой грамотности</h4>
+            </div>
+          </div>
+        </div>
+        <div class="images">
+          <div class="star">
+            <img src="./assets/img/star.svg" alt="star">
+          </div>
+          <div class="goblet">
+            <img src="./assets/img/goblet.png" alt="star">
+          </div>
         </div>
       </div>
     </div>
     <div class="section-2">
-      <div class="container">
-        <h3>Вы с нами?</h3>
-        <div class="tabs">
-          <div class="tab__name" onclick="openTab(event, 'tab-1')" id="defaultOpen">
-            Горящие предложения
+      <div class="container container-s-2">
+        <div class="about-championship">
+          <div class="title">
+            <div class="highlighted outlined">
+              о чемпионате
+            </div>
           </div>
-          <div class="tab__name" onclick="openTab(event, 'tab-2')">
-            Все предложения
+          <div class="description">
+            <div class="description__1">
+              <div class="heading">
+                <h2>Что такое чемпионат<br> по финансовым играм?</h2>
+              </div>
+              <div class="image">
+                <img src="./assets/img/about-championship.png" alt="about-championship">
+              </div>
+            </div>
+            <div class="description__2">
+              <div class="part-1">
+                <p>
+                  Летний чемпионат по финансовым играм - это уникальная возможность повысить свои знания и навыки по финансовой грамотности.<br> 
+                  Чемпионат проводится в формате увлекательных настольных игр.
+                </p>
+              </div>
+              <div class="part-2">
+                <p>
+                  Для участия в чемпионате не требуется специальных навыков и знаний.<br> 
+                  Изучать и закреплять знания по финансовой грамотности участники будут прямо во время турнира.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="tab__content" id="tab-1">
-          <div class="owl-carousel owl-theme">
-            <div class="card">
-              <img src="./assets/img/slider-pic-1.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
+          <div class="positioned-elements">
+            <div class="star-white">
+              <img src="./assets/img/star-white.svg" alt="star-white">
             </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-2.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
+            <div class="star">
+              <img src="./assets/img/star.svg" alt="star">
             </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-3.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-4.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-1.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-2.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-3.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-4.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
+            <div class="ruble-sign">
+              <img src="./assets/img/ruble-sign.png" alt="ruble-sign">
             </div>
           </div>
         </div>
-        <div class="tab__content" id="tab-2">
-          <div class="owl-carousel owl-theme">
-            <div class="card">
-              <img src="./assets/img/slider-pic-1.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-2.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-3.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-4.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-1.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-2.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-3.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/slider-pic-4.png">
-              <h5>Пакет включено почти всё</h5>
-              <p>
-                Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.
-              </p>
-            </div>
+        <div class="positioned-elements">
+          <div class="tape">
+            <img src="./assets/img/tape1.svg" alt="tape1">
           </div>
         </div>
       </div>
     </div>
     <div class="section-3">
       <div class="container container-s-3">
-        <div class="info">
-          <h4>Остались вопросы?</h4>
-          <p>
-            Задача организации, в особенности же курс на социально-ориентированный национальный проект позволяет оценить значение модели развития.
-          </p>
+        <div class="why-to-take-part">
+          <div class="title">
+            <div class="highlighted outlined">
+              для чего
+            </div>
+          </div>
+          <div class="title-2">
+            <h2>Зачем участвовать в чемпионате?</h2>
+          </div>
+          <hr>
+          <div class="features">
+            <div class="features__row">
+              <div class="feature">
+                <h5>Получить<br> прикладные<br> знания</h5>
+                <p>
+                  На чемпионате есть возможность познакомиться с базовыми понятиями и принципами финансовой грамотности, прокачать гибкие навыки и предпринимательское мышление. А благодаря игровому формату новые знания усвоятся значительно лучше!
+                </p>
+                <div class="feature__image lamp">
+                  <img src="./assets/img/lamp.png" alt="lamp">
+                </div>
+              </div>
+              <div class="feature">
+                <h5>Проверить<br> себя</h5>
+                <p>
+                  Результаты личного и командного зачетов продемонстрируют, насколько хорошо ты разбираешься в теме финансов и умеешь управлять своими ресурсами.
+                </p>
+                <div class="feature__image check">
+                  <img src="./assets/img/check.png" alt="check">
+                </div>
+              </div>
+            </div>
+            <div class="features__row">
+              <div class="feature">
+                <h5>Восполнить<br> пробелы и<br> потрениро­вать<br> навыки</h5>
+                <p>
+                  Если умений и опыта не хватает, во время турнира ты сможешь потренироваться, закрепить новую информацию и систематизировать свои знания.
+                </p>
+                <div class="feature__image learn">
+                  <img src="./assets/img/learn.png" alt="learn">
+                </div>
+              </div>
+              <div class="feature">
+                <h5>Получить призы и<br> подарки</h5>
+                <p>
+                  Все участники получат сертификаты, а финалистов и призеров ждут памятные подарки. 
+                </p>
+                <div class="feature__image win">
+                  <img src="./assets/img/win.png" alt="win">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apply-for-taking-part">
+            <div class="btn solid yellow">
+              Подать заявку на участие
+            </div>
+          </div>
         </div>
-        <form class="form">
-          <div class="form-group">
-            <label for="name-input" id="name-label">Имя</label>
-            <input 
-              type="text" 
-              class="form-control" 
-              id="name-input" 
-              onfocus="labelFocusHandler('name-label')"
-              onblur="labelBlurHandler('name-label', 'name-input')"
-              onkeydown="validateInput('name-label', 'name-input')"
-            >
+        <div class="positioned-elements">
+          <div class="star-round">
+            <img src="./assets/img/star-round.svg" alt="star-round">
           </div>
-          <div class="form-group">
-            <label for="tel-input" id="tel-label">Телефон</label>
-            <input 
-              type="tel" 
-              class="form-control" 
-              id="tel-input"
-              onfocus="labelFocusHandler('tel-label')"
-              onblur="labelBlurHandler('tel-label', 'tel-input')"
-              onkeydown="validateInput('tel-label', 'tel-input')"
-            >
+          <div class="tape">
+            <img src="./assets/img/tape2.svg" alt="tape2">
           </div>
-          <div class="form-group">
-            <label for="email-input" id="email-label">Email</label>
-            <input 
-              type="email" 
-              class="form-control" 
-              id="email-input"
-              onfocus="labelFocusHandler('email-label')"
-              onblur="labelBlurHandler('email-label', 'email-input')"
-              onkeydown="validateInput('email-label', 'email-input')"
-            >
-          </div>
-          <button type="button" class="submit">
-            Отправить
-          </button>
-        </form>
-        <div class="animated-elements">
-          <div class="arrow-1-s-3">
-            <img src="./assets/img/section-3/arrow-1-s-3.png">
-          </div>
-          <div class="arrow-2-s-3">
-            <img src="./assets/img/section-3/arrow-2-s-3.png">
-          </div>
-          <div class="arrow-3-s-3">
-            <img src="./assets/img/section-3/arrow-3-s-3.png">
-          </div>
-          <div class="circle-1-s-3"></div>
-          <div class="circle-2-s-3"></div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="logo">
-        <img src="./assets/img/s-1-logo.png" alt="">
+    <div class="section-4">
+      <div class="container container-s-4">
+        <div class="who-can-take-part">
+          <hr>
+          <h2>Кто может<br> принять участие?</h2>
+          <div class="info">
+            <div class="part-1">
+              <div class="image">
+                <img src="./assets/img/who-can-take-part.png" alt="about-championship">
+              </div>
+              <div class="text">
+                <h4>Школьники 8-18 лет из Хабаровска и Хабаровского края</h4>
+              </div>
+            </div>
+            <div class="part-2">
+              <p>
+                Для участия в чемпионате достаточно заполнить форму на сайте.<br> 
+                В этом тебе могут помочь твои родители. 
+              </p>
+              <p>
+                После оформления заявки с тобой свяжутся организаторы и расскажут о дальнейших действиях. 
+              </p>
+            </div>
+          </div>
+          <div class="take-part">
+            <div class="btn solid yellow">
+              Принять участие
+            </div>
+          </div>
+        </div>
+        <div class="positioned-elements">
+          <div class="title">
+            <div class="highlighted outlined">
+              для кого
+            </div>
+          </div>
+          <div class="star-1">
+            <img src="./assets/img/star.svg" alt="star">
+          </div>
+          <div class="star-2">
+            <img src="./assets/img/star.svg" alt="star-white">
+          </div>
+          <div class="message-1">
+            <div class="message-1__container">
+              <img src="./assets/img/message-1.png" alt="star">
+              <div class="message-1__text">Ты школьник?</div>
+            </div>
+          </div>
+          <div class="message-2">
+            <div class="message-2__container">
+              <img src="./assets/img/message-2.png" alt="star">
+              <div class="message-2__text">Хочешь быть финансово грамотным?</div>
+            </div>
+          </div>
+          <div class="message-3">
+            <div class="message-3__container">
+              <img src="./assets/img/message-3.png" alt="star">
+              <div class="message-3__text">Регистрируйся на чемпионат!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-5">
+      <div class="container container-s-5">
+        <div class="championship-news">
+          <div class="title">
+            <div class="highlighted outlined">новости</div>
+          </div>
+          <h2>Новости чемпионата</h2>
+          <hr>
+          <h5>
+            Как проходил летний чемпионат по финансовой грамотности в 2022 г. 
+            <span>в Хабаровске</span>
+          </h5>
+          <div class="gallery">
+            <div class="gallery__row">
+              <div class="image">
+                <img src="./assets/img/news-1.png" alt="">
+              </div>
+              <div class="image">
+                <img src="./assets/img/news-2.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__row">
+              <div class="image">
+                <img src="./assets/img/news-3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="positioned-elements">
+          <div class="star-round-1">
+            <img src="./assets/img/star-round.svg" alt="star-round">
+          </div>
+          <div class="star-round-2">
+            <img src="./assets/img/star-round.svg" alt="star-round">
+          </div>
+          <div class="goblet-2">
+            <img src="./assets/img/goblet-2.png" alt="goblet-2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-6">
+      <div class="container container-s-6">
+        <div class="championship-organizer">
+          <div class="title">
+            <div class="highlighted outlined">организатор</div>
+          </div>
+          <h2>Организатор<br> чемпионата</h2>
+          <hr>
+          <div class="description">
+            <div class="part-1"></div>
+            <div class="part-2">
+              <p>
+                <span>Финсграм</span> - это некоммерческая организация, занимающаяся развитием навыков у детей, которые необходимы для успешной жизни и карьеры в будущем.
+              </p>
+              <p>
+                Мы обучаем детей и подростков 8−18 лет финансовой грамотности, soft skills, помогаем развивать эмоциональный интеллект и предпринимательское мышление.
+              </p>
+            </div>
+          </div>
+          <div class="features">
+            <div class="features__row">
+              <div class="feature">
+                <h3>700+</h3>
+                <p>
+                  учеников за 2022 год
+                </p>
+                <div class="feature__image star-white">
+                  <img src="./assets/img/star-white.svg" alt="star-white">
+                </div>
+              </div>
+              <div class="feature">
+                <h3>30+</h3>
+                <p>
+                  школ-участников
+                </p>
+                <div class="feature__image star-white">
+                  <img src="./assets/img/star-white.svg" alt="star-white">
+                </div>
+              </div>
+              <div class="feature">
+                <h3>5</h3>
+                <p>
+                  площадок
+                </p>
+                <div class="feature__image star-white">
+                  <img src="./assets/img/star-white.svg" alt="star-white">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="positioned-elements">
+          <div class="earth">
+            <div class="earth__container">
+              <img src="./assets/img/earth.svg" alt="earth">
+              <div class="earth__text">Хабаровский край</div>
+            </div>
+          </div>
+          <div class="tape">
+            <img src="./assets/img/tape3.svg" alt="tape3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-7">
+      <div class="container container-s-7">
+        <div class="partners-and-sponsors">
+          <h2>партнёры</h2>
+          <h2>и спонсоры</h2>
+          <div class="sponsors">
+            <div class="sponsor">
+              <img src="./assets/img/fond-prezidentskikh-grantov.png" alt="fond-prezidentskikh-grantov">
+            </div>
+            <div class="sponsor">
+              <img src="./assets/img/pravitelstvo-khabarovskogo-kraya.png" alt="pravitelstvo-khabarovskogo-kraya">
+            </div>
+            <div class="sponsor">
+              <img src="./assets/img/natsionalnyi-tsenr-finansoboy-gramotnosti.png" alt="natsionalnyi-tsenr-finansoboy-gramotnosti">
+            </div>
+            <div class="sponsor">
+              <img src="./assets/img/mn-kids-finance.png" alt="mn-kids-finance">
+            </div>
+            <div class="sponsor">
+              <img src="./assets/img/shkola-finansovoi-gramotnosti.png" alt="shkola-finansovoi-gramotnosti">
+            </div>
+          </div>
+          <div class="request">
+            <p>
+              Хотите стать партнером или спонсором Чемпионата?<br> 
+              Напишите свой запрос на адрес <span>club@finsgram.ru</span>
+            </p>
+            <div class="image">
+              <img src="./assets/img/paper-plane.png" alt="paper-plane">
+            </div>
+          </div>
+        </div>
+        <div class="positioned-elements">
+          <div class="title">
+            <div class="highlighted outlined">
+              поддержка
+            </div>
+          </div>
+          <div class="star">
+            <img src="./assets/img/star.svg" alt="star">
+          </div>
+          <div class="radial-gradient"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-8">
+      <div class="container container-s-8">
+        <div class="order">
+          <div class="title">
+            <div class="highlighted outlined">заявка</div>
+          </div>
+          <div class="form-wrapper">
+            <div class="form-title">
+              <h4>Регистрация на чемпионат:</h4>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="name-input" 
+                  placeholder="Имя"
+                >
+              </div>
+              <div class="form-group">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="surname-input" 
+                  placeholder="Фамилия"
+                >
+              </div>
+              <div class="form-group">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="address-input" 
+                  placeholder="Адрес"
+                >
+              </div>
+              <div class="form-group">
+                <label for="school-name-input" id="school-name-label" class="label">
+                </label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="school-name-input" 
+                  placeholder="Наименование учебного заведения"
+                >
+              </div>
+              <div class="form-group">
+                <input 
+                  type="tel" 
+                  class="form-control" 
+                  id="tel-input"
+                  placeholder="Контактный телефон"
+                >
+              </div>
+              <div class="form-group">
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="email-input"
+                  placeholder="Email"
+                >
+              </div>
+              <div class="agree">
+                <div class="checkbox">
+                  <div class="checkbox__original">
+                    <input type="checkbox" class="checkbox-input" name="item1" value="value1" checked>
+                  </div>
+                  <div class="checkbox__custom" onclick="handleCheckbox()">
+                    <div class="checkmark">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="label">
+                  <p>
+                    Согласен с <span>условиями использования</span> формы заявки и <span>политикой конфиденциальности</span> лица, разместившего форму заявки
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="submit">
+                РЕГИСТРАЦИЯ
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="positioned-elements">
+          <div class="loudspeaker">
+            <img src="./assets/img/loudspeaker.png" alt="loudspeaker">
+          </div>
+          <div class="paper-plane">
+            <img src="./assets/img/paper-plane.png" alt="paper-plane">
+          </div>
+          <div class="star-round">
+            <img src="./assets/img/star-round.svg" alt="star-round">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-9 contacts">
+      <div class="container container-s-9">
+        <div class="part-1">
+          <div class="label">
+            <div class="label__logo">
+              <img src="./assets/img/logo.svg" alt="label-logo">
+            </div>
+            <div class="label__text">
+              ФИНСГРАМ
+            </div>
+          </div>
+          <h5>Хабаровский край, г. Хабаровск</h5>
+          <h4>8 (922) 777- 40-14</h4>
+          <h6>club@finsgram.ru</h6>
+          <div class="social-links">
+            <div class="vk">
+              <img src="./assets/img/vk.svg" alt="vk">
+            </div>
+          </div>
+        </div>
+        <div class="part-2">
+          <div class="positioned-elements">
+            <div class="goblet">
+              <img src="./assets/img/goblet.png" alt="goblet">
+            </div>
+            <div class="star-big">
+              <img src="./assets/img/star.svg" alt="star">
+            </div>
+            <div class="star-small">
+              <img src="./assets/img/star.svg" alt="star">
+            </div>
+            <div class="label-wait">
+              <div class="label-wait__container">
+                <img src="./assets/img/label-wait.svg" alt="label-wait">
+                <div class="positioned-elements">
+                  <div class="label-wait__text">Ждём тебя на чемпионате!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="positioned-elements">
+          <div class="radial-gradient-1"></div>
+          <div class="radial-gradient-2"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container container-f">
+        <h6>АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ ЦЕНТР РАЗВИТИЯ ЛИЧНЫХ И ПРОФЕССИОНАЛЬНЫХ КОМПЕТЕНЦИЙ "НАСТАВНИКИ"</h6>
+        <hr>
+        <div class="details">
+          <div class="details__item">
+            © Финсграм 2022-2023. Все права защищены.
+          </div>
+          <div class="details__item">
+            Общие положения
+          </div>
+          <div class="details__item">
+            Регламент проведения чемпионата
+          </div>
+          <div class="details__item">
+            Политика обработки персональных данных
+          </div>
+        </div>
       </div>
     </footer>
   </div>
